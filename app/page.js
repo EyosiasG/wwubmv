@@ -119,17 +119,30 @@ export default function Home() {
             <div className={`text-2xl text-gray-700 mt-4 ${caveat.className}`}>
               You've made me the happiest person ever! 🥰
             </div>
-            <a 
-              href="/surprise"
-              className="mt-8 transform hover:scale-110 transition-all duration-300 cursor-pointer"
-            >
-              <div className="flex flex-col items-center">
-                <div className="text-4xl animate-bounce">🎁</div>
-                <div className={`text-sm text-pink-500 mt-2 ${caveat.className}`}>
-                  Click for your surprise!
+            <div className="flex gap-6 mt-8">
+              <a 
+                href="/surprise"
+                className="transform hover:scale-110 transition-all duration-300 cursor-pointer"
+              >
+                <div className="flex flex-col items-center">
+                  <div className="text-4xl animate-bounce">🎁</div>
+                  <div className={`text-sm text-pink-500 mt-2 ${caveat.className}`}>
+                    Click for your surprise!
+                  </div>
                 </div>
-              </div>
-            </a>
+              </a>
+              <a 
+                href="/tilau"
+                className="transform hover:scale-110 transition-all duration-300 cursor-pointer"
+              >
+                <div className="flex flex-col items-center">
+                  <div className="text-4xl animate-pulse">💝</div>
+                  <div className={`text-sm text-pink-500 mt-2 ${caveat.className}`}>
+                    Whats this ;)
+                  </div>
+                </div>
+              </a>
+            </div>
           </div>
         ) : (
           <div className="flex flex-col items-center justify-center">
@@ -142,6 +155,17 @@ export default function Home() {
             <h1 className={`my-4 mt-10 text-4xl font-bold text-pink-600 animate-pulse ${dancingScript.className}`}>
               Wintaye, Will you be my Valentine? 💝
             </h1>
+            <a 
+              href="/howlong"
+              className="transform hover:scale-110 transition-all duration-300 cursor-pointer mb-8"
+            >
+              <div className="flex flex-col items-center">
+                <div className="text-4xl animate-pulse">⏰</div>
+                <div className={`text-sm text-pink-500 mt-2 ${caveat.className}`}>
+                  But First, Want to know how long have we known each other?
+                </div>
+              </div>
+            </a>
             <div className="flex items-center">
               <button
                 className={`mr-4 mt-10 animate-bounce rounded-full bg-gradient-to-r from-pink-500 to-purple-500 px-8 py-4 font-bold text-white hover:from-pink-600 hover:to-purple-600 transform hover:scale-110 transition-all duration-300 shadow-lg ${caveat.className}`}
